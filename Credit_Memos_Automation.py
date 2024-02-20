@@ -28,7 +28,7 @@ def load_dataframe(file):
     return df
 
 
-file_uploaded = st.file_uploader('Please upload the file with the items you want to process.')
+file_uploaded = st.file_uploader('Please upload the file with the items you want to process.',type=["csv", "xlsx"])
 
 if file_uploaded:
     df = load_dataframe(file_uploaded)
